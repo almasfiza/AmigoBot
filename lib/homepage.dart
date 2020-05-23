@@ -1,4 +1,6 @@
+import 'package:amigobot/amigo.dart';
 import 'package:flutter/material.dart';
+
 
 
 class homepage extends StatelessWidget {
@@ -85,7 +87,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                       onPressed:()
                       {
-                        //chat room
+                        Navigator.push(context,MaterialPageRoute(builder:(context){
+                          return amigo();
+                        }));
 
                       },
                     )
